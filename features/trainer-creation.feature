@@ -1,4 +1,3 @@
-@wip
 Feature: Trainer creation
 
   As trainers are signed up, we need to capture their details in the trainer directory

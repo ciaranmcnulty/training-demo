@@ -2,3 +2,6 @@ default:
   gherkin:
     filters:
       tags: ~@wip
+  suites:
+    services:
+        contexts: [ServiceContext]

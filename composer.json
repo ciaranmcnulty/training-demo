@@ -3,7 +3,8 @@
     "require-dev": {
         "php": "^8.0",
         "behat/behat": "^3.8",
-        "phpspec/phpspec": "^7.0"
+        "phpspec/phpspec": "^7.0",
+        "phpunit/phpunit": "^9.5"
     },
     "authors": [
         {
@@ -11,5 +12,9 @@
             "email": "mail@ciaranmcnulty.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    }
 }
