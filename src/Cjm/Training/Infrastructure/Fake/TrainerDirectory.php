@@ -7,7 +7,7 @@ use Cjm\Training\Core\TrainerDirectory as TrainerDirectoryInterface;
 
 final class TrainerDirectory implements TrainerDirectoryInterface
 {
-    private array $trainers;
+    private array $trainers = [];
 
     public function create(Trainer $trainer): void
     {

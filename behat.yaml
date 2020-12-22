@@ -1,7 +1,22 @@
 default:
   gherkin:
     filters:
-      tags: ~@wip
+      tags: "~@wip"
   suites:
-    services:
-        contexts: [ServiceContext]
+    application:
+        contexts: [ Cjm\Behat\ServiceContext ]
+    end-to-end:
+      contexts: [ Cjm\Behat\BrowserContext ]
+      filters:
+        tags: "@e2e"
+
+  extensions:
+
+    FriendsOfBehat\SymfonyExtension:
+      kernel:
+        class: Cjm\Training\Ui\Kernel
+
+    Behat\MinkExtension:
+      sessions:
+        symfony:
+          symfony: ~

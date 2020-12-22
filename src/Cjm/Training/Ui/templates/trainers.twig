@@ -1,0 +1,13 @@
+<h1>Trainers</h1>
+
+<ul class="trainer-list">
+{% for trainer in trainers %}
+<li>{{ trainer.name }}
+{% endfor %}
+</ul>
+
+<form>
+    <input name="name">
+    <button type="submit">Add</button>
+</form>
+

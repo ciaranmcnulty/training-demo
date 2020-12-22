@@ -1,4 +1,4 @@
-<phpunit bootstrap="vendor/autoload.php">
+<phpunit bootstrap="vendor/autoload.php" cacheResult="false">
     <testsuites>
         <testsuite name="integration">
             <directory>integration</directory>
